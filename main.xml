@@ -169,6 +169,19 @@
 				<value_node value="wpn_fps_ass_heffy_939_m_bake_20"/>
 				<value_node value="wpn_fps_ass_heffy_939_m_tiss_20"/>
 				
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ns_ass_pbs1"/>
+				
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				
 				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
 				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
 				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
@@ -245,101 +258,121 @@
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ba_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ba_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ba_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ba_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fh_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fh_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fh_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fh_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fh_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ch_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ch_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ch_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ch_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ch_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lr_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lr_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lr_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lr_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lr_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_tr_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_tr_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_tr_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_tr_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_tr_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_rsb_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_rsb_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_rsb_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_rsb_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_rsb_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fsl_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fsl_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fsl_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fsl_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fsl_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_sad_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_sad_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_sad_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_sad_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_sad_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lrp_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lrp_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lrp_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lrp_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lrp_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ur_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ur_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ur_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ur_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ur_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lfg_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lfg_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lfg_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lfg_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lfg_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ufg_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ufg_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ufg_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ufg_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ufg_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lfgc_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lfgc_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lfgc_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lfgc_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_lfgc_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ufgc_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ufgc_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ufgc_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ufgc_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ufgc_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ro_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ro_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ro_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ro_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_ro_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fo_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fo_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fo_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fo_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fo_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_pg_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_pg_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_pg_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_pg_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_pg_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_st_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_st_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_st_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_st_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_st_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_stp_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_stp_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_stp_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_stp_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_stp_ak9_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_stp2_ak9"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_stp2_ak9"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_stp2_ak9"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_stp2_ak9"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_stp2_ak9_thq"/>
 
 		<!-- MAG PTS -->
 	
@@ -353,6 +386,7 @@
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/wpn_fps_ass_heffy_939_m_bake_20"/>
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/wpn_fps_ass_heffy_939_m_bake_20"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/wpn_fps_ass_heffy_939_m_bake_20"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/wpn_fps_ass_heffy_939_m_bake_20_thq"/>
 		
 		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/tiss_20_df"/>
 		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/tiss_20_nm"/>
