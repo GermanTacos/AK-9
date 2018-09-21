@@ -1,13 +1,13 @@
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
 --                                                                                      --
---                          ||       ||   ||       ||||     |||||    ||||               --
---                         ||||      ||  ||       || ||    ||   ||  || ||               --
---                        ||  ||     || ||           ||   ||     ||    ||               --
---                       ||||||||    ||||            ||   ||     ||    ||               --
---                      ||      ||   || ||           ||   ||     ||    ||               --
---                     ||        ||  ||  ||          ||    ||   ||     ||               --
---                    ||          || ||   ||      |||||||   |||||   |||||||             --
+--                          ||       ||   ||        ||||||                              --
+--                         ||||      ||  ||        ||    ||                             --
+--                        ||  ||     || ||         ||    ||                             --
+--                       ||||||||    ||||           |||||||                             --
+--                      ||      ||   || ||              ||                              --
+--                     ||        ||  ||  ||           |||                               --
+--                    ||          || ||   ||        |||                                 --
 --                                                                                      --
 ------------------------------------------------------------------------------------------
 --																						--
@@ -25,9 +25,9 @@
 ------------------------------------------------------------------------------------------
 
 
----------------------------------------------------
-----<A><K><1><0><1> -Functions- <A><K><1><0><1>----
----------------------------------------------------
+---------------------------------------
+----<A><K><9> -Functions- <A><K><9>----
+---------------------------------------
 
 --- Forbid Setup ---
 function WeaponFactoryTweakData:akpack_setup_forbid( mod_one, mod_two )
@@ -85,12 +85,12 @@ function WeaponFactoryTweakData:akpack_check_adds( mod_type, mod_woa )
 end
 
 --- Part Copy Base ---
-function WeaponFactoryTweakData:ak556_copy_part( att_og, att_cp )
+function WeaponFactoryTweakData:ak939_copy_part( att_og, att_cp )
     if self.parts[att_og] then
         self.parts[att_cp] = deep_clone(self.parts[att_og])
         self.parts[att_cp].pcs = {}
         self.parts[att_cp].is_a_unlockable = true
-        table.insert(self.wpn_fps_ass_heffy_556.uses_parts, att_cp)
+        table.insert(self.wpn_fps_ass_heffy_939.uses_parts, att_cp)
     else
         self:akpack_write_error( "copy_part", "fti", "part", att_og )    
     end
@@ -112,52 +112,49 @@ function WeaponFactoryTweakData:akpack_write_error( func, cause, error_id, value
 	end
 end 
 
-Hooks:PostHook( WeaponFactoryTweakData, "init", "AK101ModInit", function(self)
+Hooks:PostHook( WeaponFactoryTweakData, "init", "AK9ModInit", function(self)
 
 ------------------------------------------------
 ----<A><K><1><0><1> -Arrays- <A><K><1><0><1>----
 ------------------------------------------------
 
 --- Stocks ---
-local all_ak101stock = {
-	"wpn_fps_ass_heffy_556_st_ak101"
+local all_ak9stock = {
+	"wpn_fps_ass_heffy_939_st_ak9"
 }
-local ak101stock = {
-	"wpn_fps_ass_heffy_556_st_ak101"
+local ak9stock = {
+	"wpn_fps_ass_heffy_939_st_ak9"
 }
 --- Stock Pads ---
-local ak101stockpad = {
-	"wpn_fps_ass_heffy_556_stp_ak101",
-	"wpn_fps_ass_heffy_556_stp2_ak101"
+local ak9stockpad = {
+	"wpn_fps_ass_heffy_939_stp_ak9",
+	"wpn_fps_ass_heffy_939_stp2_ak9"
 }
 --- Fore Grip ---
 -- Default length --
-local all_ak101lowerforegrip = {
-	"wpn_fps_ass_heffy_556_lfg_ak101"
+local all_ak9lowerforegrip = {
+	"wpn_fps_ass_heffy_939_lfg_ak9"
 }
-local ak101foregrip = {
-	"wpn_fps_ass_heffy_556_lfg_ak101"
+local ak9foregrip = {
+	"wpn_fps_ass_heffy_939_lfg_ak9"
 }
 
 --- Barrel ---
 -- Default length --
-local ak101barrel = {
-	"wpn_fps_ass_heffy_556_ba_ak101",
-	"wpn_fps_ass_heffy_556_ba_ak108"
+local ak9barrel = {
+	"wpn_fps_ass_heffy_939_ba_ak9"
 }
-local all_ak101barrel = {
-	"wpn_fps_ass_heffy_556_ba_ak101",
-	"wpn_fps_ass_heffy_556_ba_ak102",
-	"wpn_fps_ass_heffy_556_ba_ak108"
+local all_ak9barrel = {
+	"wpn_fps_ass_heffy_939_ba_ak9"
 }
 
 --- Front Sights ---
-local all_ak101fo = {
-	"wpn_fps_ass_heffy_556_fo_ak101"
+local all_ak9fo = {
+	"wpn_fps_ass_heffy_939_fo_ak9"
 }
 
 --- Barrel Extensions --
-local all_ak101ext = {
+local all_ak9ext = {
 	"wpn_fps_upg_ns_ass_smg_large",
 	"wpn_fps_upg_ns_ass_smg_medium",
 	"wpn_fps_upg_ns_ass_smg_small",
@@ -169,14 +166,12 @@ local all_ak101ext = {
 	"wpn_fps_upg_ass_ns_linear",
 	"wpn_fps_upg_ass_ns_surefire",
 	"wpn_fps_upg_ass_ns_battle",
-	"wpn_fps_ass_heffy_556_fh_dummy",
-	"wpn_fps_ass_heffy_556_fh_ak101",
-	"wpn_fps_ass_heffy_556_fh_ak102",
-	"wpn_fps_ass_heffy_556_fh_ak108"
+	"wpn_fps_ass_heffy_939_fh_dummy",
+	"wpn_fps_ass_heffy_939_fh_ak9"
 }
 
 --- Gadgets (Flashlights/Lasers) ---
-local all_ak101fl = {
+local all_ak9fl = {
 	"wpn_fps_upg_fl_ass_smg_sho_peqbox",
 	"wpn_fps_upg_fl_ass_smg_sho_surefire",
 	"wpn_fps_upg_fl_ass_peq15",
@@ -186,7 +181,7 @@ local all_ak101fl = {
 }
 
 --- Sights ---
-local all_ak101sight = {
+local all_ak9sight = {
 	"wpn_fps_upg_o_specter",
 	"wpn_fps_upg_o_aimpoint",
 	"wpn_fps_upg_o_aimpoint_2",
@@ -219,8 +214,8 @@ local nonacog_aksight = {
 }
 
 --- Grips ---
-local ak101grips = {
-	"wpn_fps_ass_heffy_556_pg_ak101"
+local ak9grips = {
+	"wpn_fps_ass_heffy_939_pg_ak9"
 }
 --------------------------------------------------
 ----<A><K><1><0><1> -Override- <A><K><1><0><1>----
@@ -229,43 +224,43 @@ local ak101grips = {
 --- Gun ---
 
 --- Barrel ---
-for i, ba_id in ipairs(all_ak101barrel) do
+for i, ba_id in ipairs(all_ak9barrel) do
 	self:akpack_check_override( "part", ba_id )
 end
 --self.parts.wpn_fps_ass_heffy_762_ba_akm.override.wpn_fps_ass_heffy_762_fh_dummy = {unit="units/mods/weapons/wpn_fps_ass_heffy_762_akm_pts/wpn_fps_ass_heffy_762_fh_akm"}
 -- Default length barrel barrel extension and front sight override --
-for i, ba_id in ipairs(ak101barrel) do
-	for i, ext_id in ipairs(all_ak101ext) do
-		if ext_id ~= "wpn_fps_ass_heffy_556_fh_dummy" then
+for i, ba_id in ipairs(ak9barrel) do
+	for i, ext_id in ipairs(all_ak9ext) do
+		if ext_id ~= "wpn_fps_ass_heffy_939_fh_dummy" then
 			self.parts[ba_id].override[ext_id] = {a_obj = "a_ns"}
 		end
 	end
-	for i, fo_id in ipairs(all_ak101fo) do
+	for i, fo_id in ipairs(all_ak9fo) do
 		self.parts[ba_id].override[fo_id] = {}
 	end
 end
 
---self.parts.wpn_fps_ass_heffy_556_ba_ak101.override.wpn_fps_ass_heffy_556_fh_dummy   = {a_obj = "a_ns", unit="units/mods/weapons/wpn_fps_ass_heffy_556_ak101_pts/wpn_fps_ass_heffy_556_fh_ak101"}
+--self.parts.wpn_fps_ass_heffy_939_ba_ak9.override.wpn_fps_ass_heffy_939_fh_dummy   = {a_obj = "a_ns", unit="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fh_ak9"}
 
 -- Other length barrel barrel extension overrides --
-for i, ext_id in ipairs(all_ak101ext) do
-	if ext_id == "wpn_fps_ass_heffy_556_fh_dummy" then
-		self.parts.wpn_fps_ass_heffy_556_ba_ak102.override[ext_id] = {a_obj = "a_ns_ak102", unit="units/mods/weapons/wpn_fps_ass_heffy_556_ak102_pts/wpn_fps_ass_heffy_556_fh_ak102"}
+--[[for i, ext_id in ipairs(all_ak9ext) do
+	if ext_id == "wpn_fps_ass_heffy_939_fh_dummy" then
+		self.parts.wpn_fps_ass_heffy_939_ba_ak102.override[ext_id] = {a_obj = "a_ns_ak102", unit="units/mods/weapons/wpn_fps_ass_heffy_939_ak102_pts/wpn_fps_ass_heffy_939_fh_ak102"}
 	else
-		self.parts.wpn_fps_ass_heffy_556_ba_ak102.override[ext_id]	= {a_obj = "a_ns_ak102"}
+		self.parts.wpn_fps_ass_heffy_939_ba_ak102.override[ext_id]	= {a_obj = "a_ns_ak102"}
 	end
-end
+end]]--
 -- Other length barrel Front Sight overrides --
-for i, fo_id in ipairs(all_ak101fo) do
-	self.parts.wpn_fps_ass_heffy_556_ba_ak102.override[fo_id] = {a_obj = "a_fo_ak102"}
+for i, fo_id in ipairs(all_ak9fo) do
+	self.parts.wpn_fps_ass_heffy_939_ba_ak9.override[fo_id] = {a_obj = "a_fo_ak9"}
 end
 
 --- Fore Grip ---
 -- Default length fg barrel position override --
 --[[
-for i, fg_id in ipairs(ak101foregrip) do
+for i, fg_id in ipairs(ak9foregrip) do
 	self:akpack_check_override( "part", fg_id )
-	for i, ba_id in ipairs(ak101barrel) do
+	for i, ba_id in ipairs(ak9barrel) do
 		self.parts[fg_id].override[ba_id] = {}
 	end
 end
@@ -326,7 +321,7 @@ for i, ext_id in ipairs(all_ak47ext) do
 	end
 end]]--
 --- Receiver aka Lower ---
-self:akpack_check_override( "part", "wpn_fps_ass_heffy_556_lr_ak101" )
+self:akpack_check_override( "part", "wpn_fps_ass_heffy_939_lr_ak9" )
 --Stock overrides--
 --[[for i, st_id in ipairs(akmstock) do
 	self.parts.wpn_fps_ass_heffy_762_lr_ak47.override[st_id]  = {a_obj = "a_s_ak47"}
@@ -413,9 +408,9 @@ end]]--
 ----<A><K><1><0><1> -Adds- <A><K><1><0><1>----
 ----------------------------------------------
 --- Gun ---
-self:akpack_check_adds( "wpn", "wpn_fps_ass_heffy_556" )
-for i, o_id in ipairs(all_ak101sight) do
-	self.wpn_fps_ass_heffy_556.adds[o_id] = {"wpn_fps_upg_o_ak101_scopemount"}
+self:akpack_check_adds( "wpn", "wpn_fps_ass_heffy_939" )
+for i, o_id in ipairs(all_ak9sight) do
+	self.wpn_fps_ass_heffy_939.adds[o_id] = {"wpn_fps_upg_o_ak9_scopemount"}
 end
 	
 -------------------------------------------------
@@ -444,13 +439,13 @@ self.parts.wpn_fps_ass_heffy_762_ba_m92.weapon_stance_override   = {bm_w_heffy_7
 --- Vanilla sights ---
 -- non-acoc, default sights --
 for i, o_id in ipairs(nonacog_aksight) do
-	self.parts[o_id].stance_mod.wpn_fps_ass_heffy_556 = {translation = Vector3(0, 7, -3.7)}
+	self.parts[o_id].stance_mod.wpn_fps_ass_heffy_939 = {translation = Vector3(0, 7, -3.7)}
 end
 -- other sights --
-self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_heffy_556 			   = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_flint)
-self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_heffy_556 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_flint)
-self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_heffy_556 = deep_clone(self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_flint)
-self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_heffy_556 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_flint)
+self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_heffy_939 			   = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_flint)
+self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_heffy_939 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_flint)
+self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_heffy_939 = deep_clone(self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_flint)
+self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_heffy_939 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_flint)
 
 -----------------------------------------------------
 ----<A><K><1><0><1> -Underbarrel- <A><K><1><0><1>----
@@ -509,13 +504,13 @@ end]]--
 ------------------------------------------------
 
 --- Barrel Extensions ---
-self.parts.wpn_fps_ass_heffy_556_fh_dummy.pcs = nil
+self.parts.wpn_fps_ass_heffy_939_fh_dummy.pcs = nil
 
 ------------------------------------------------
 ----<A><K><1><0><1> -CLONES- <A><K><1><0><1>----
 ------------------------------------------------
 
-self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_556" )
+--[[self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_939" )
 
 if self.wpn_fps_ass_heffy_545 then
 
@@ -531,15 +526,15 @@ if self.wpn_fps_ass_heffy_545 then
 	}
 	
 	for i, part_id in ipairs(ak74parts) do
-        table.insert(self.wpn_fps_ass_heffy_556.uses_parts, part_id)
+        table.insert(self.wpn_fps_ass_heffy_939.uses_parts, part_id)
     end
 	
-	self:ak556_copy_part( "wpn_fps_ass_heffy_545_lfg_ak74", "wpn_fps_ass_heffy_556_lfg_ak74")
-	self:ak556_copy_part( "wpn_fps_ass_heffy_545_ufg_ak74", "wpn_fps_ass_heffy_556_ufg_ak74")
-	self:ak556_copy_part( "wpn_fps_ass_heffy_545_pg_ak74", "wpn_fps_ass_heffy_556_pg_ak74")
-	self:ak556_copy_part( "wpn_fps_ass_heffy_545_st_ak74", "wpn_fps_ass_heffy_556_st_ak74")
+	self:ak939_copy_part( "wpn_fps_ass_heffy_545_lfg_ak74", "wpn_fps_ass_heffy_939_lfg_ak74")
+	self:ak939_copy_part( "wpn_fps_ass_heffy_545_ufg_ak74", "wpn_fps_ass_heffy_939_ufg_ak74")
+	self:ak939_copy_part( "wpn_fps_ass_heffy_545_pg_ak74", "wpn_fps_ass_heffy_939_pg_ak74")
+	self:ak939_copy_part( "wpn_fps_ass_heffy_545_st_ak74", "wpn_fps_ass_heffy_939_st_ak74")
 	
-end
+end]]--
 
 ---------------------------------------------
 ----<A><K><1><0><1> -WIP- <A><K><1><0><1>----
