@@ -29,13 +29,13 @@ if ( self.heffy_939 ) then
 	self:SetupAttachmentPoint("heffy_939", {
 		name = "a_fl", 
         base_a_obj = "a_fl", 
-        position = Vector3( 0, 0, -2 ), 
+        position = Vector3( -0.4, 0, -1 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_939", {
 		name = "a_gl", 
         base_a_obj = "a_fl", 
-        position = Vector3( -0.6, 24.6, -3.1 ), 
+        position = Vector3( -2.88, 27.2, -3.1 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_939", {
@@ -80,6 +80,18 @@ if ( self.heffy_939 ) then
 -- Overide positions --
 	
 --- Stocks ---
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_s_akmsu", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 0.875, 0.6875 ), --0.7, 0.55 | 0.175, 0.1375
+        rotation = Rotation( 0, 5, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_s_akmsu_ak47", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -0.35, -0.275 ), 
+        rotation = Rotation( 0, -2.5, 0 ) 
+	})
 	
 --- Pistol Grips ---
 	
