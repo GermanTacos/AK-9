@@ -214,9 +214,9 @@
 	<Sounds directory="assets">
 		<sound id="ak9_fire_single" path="sounds/ak9_fire_auto.ogg" prefix="regular"/>
 		<sound id="ak9_fire_single" path="sounds/ak9_blops_fire.ogg" prefix="regular_a"/>
-		<redirect id="ak9_fire_single" to="ak74_fire" prefix="suppressed_a"/>
-		<redirect id="ak9_fire_single" to="ak74_fire" prefix="suppressed_b"/>
-		<redirect id="ak9_fire_single" to="ak74_fire" prefix="suppressed_c"/>
+		<redirect id="ak9_fire_single" to="akm_fire" prefix="suppressed_a"/>
+		<redirect id="ak9_fire_single" to="akm_fire" prefix="suppressed_b"/>
+		<redirect id="ak9_fire_single" to="akm_fire" prefix="suppressed_c"/>
 	</Sounds>
 	
 	<AddFiles directory="assets">
