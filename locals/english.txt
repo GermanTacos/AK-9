@@ -40,6 +40,6 @@
 	"bm_wp_wpn_fps_ass_heffy_939_lr_ak9"    : "AK-9 Receiver",
 	"bm_wp_wpn_fps_ass_heffy_939_ur_ak9"    : "AK-9 Dust Cover",
 	
-	"bm_wp_wpn_fps_ass_heffy_939_m_tiss_20" : "Tiss Magazine",
+	"bm_wp_wpn_fps_ass_heffy_939_m_tiss_20" : "Tiss Magazine"
 
 }
