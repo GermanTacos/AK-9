@@ -99,7 +99,7 @@
 	</WeaponMod>
 	
 	<Weapon unlock_level="0">
-		<weapon id="heffy_939" based_on="flint" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="5" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_939">
+		<weapon id="heffy_939" based_on="flint" CLIP_AMMO_MAX="20" use_stance="heffy_939_ads" NR_CLIPS_MAX="5" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_939">
 			<stats damage="85" spread="18" spread_moving="18" recoil="20" concealment="23"/>
 			<fire_mode_data fire_rate="0.1"/>
 			<AMMO_PICKUP>
