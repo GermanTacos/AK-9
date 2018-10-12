@@ -111,13 +111,13 @@
 	</WeaponMod>
 	
 	<Weapon unlock_level="0">
-		<weapon id="heffy_939" based_on="flint" CLIP_AMMO_MAX="20" use_stance="heffy_939_ads" NR_CLIPS_MAX="5" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_939">
-			<stats damage="85" spread="18" spread_moving="18" recoil="20" concealment="23"/>
-			<fire_mode_data fire_rate="0.1"/>
+		<weapon id="heffy_939" based_on="flint" CLIP_AMMO_MAX="20" use_stance="heffy_939_ads" NR_CLIPS_MAX="4" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_939">
+			<stats damage="95" spread="16" spread_moving="16" recoil="14" concealment="25"/>
+			<fire_mode_data fire_rate="0.08"/>
 			<use_data selection_index="1"/>
 			<AMMO_PICKUP>
-					<value_node value="4"/>
-					<value_node value="8"/>
+					<value_node value="1.25"/>
+					<value_node value="4.25"/>
 			</AMMO_PICKUP>
 			<sounds fire="ak9_fire_single" fire_single="ak9_fire_single" fire_auto="ak9_fire_single" use_fix="true"/>
 			<animations reload_name_id="flint" equip_id="equip_flint" recoil_steelsight="true"/>
@@ -232,16 +232,16 @@
 	</Weapon>
 	
 	<Weapon unlock_level="0">
-		<weapon id="x_heffy_939" based_on="x_akmsu" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="5" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="2" texture_bundle_folder="mods" global_value="heffy_939">
-			<stats damage="85" spread="18" spread_moving="18" recoil="20" concealment="23"/>
-			<fire_mode_data fire_rate="0.1"/>
+		<weapon id="x_heffy_939" based_on="x_akmsu" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="4" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="2" texture_bundle_folder="mods" global_value="heffy_939">
+			<stats damage="95" spread="14" spread_moving="14" recoil="8" concealment="23"/>
+			<fire_mode_data fire_rate="0.08"/>
 			<categories>
 				<value_node value="akimbo"/>
 				<value_node value="assault_rifle"/>
 			</categories>
 			<AMMO_PICKUP>
-					<value_node value="4"/>
-					<value_node value="8"/>
+					<value_node value="1.25"/>
+					<value_node value="4.25"/>
 			</AMMO_PICKUP>
 			<sounds fire="ak9_fire_single" fire_single="ak9_fire_single" fire_auto="ak9_fire_single" use_fix="true"/>
 			<animations equip_id="equip_x_akmsu" reload_name_id="x_akmsu" ignore_fullreload="true" recoil_steelsight="true"	fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
