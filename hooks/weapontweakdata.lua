@@ -87,6 +87,12 @@ if ( self.heffy_939 ) then
         rotation = Rotation( 0, 5, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_s_ak101", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 0.875, 1.8 ), --0.7, 0.55 | 0.175, 0.1375
+        rotation = Rotation( 0, 5, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_939", {
 		name = "a_s_akmsu_ak47", 
         base_a_obj = "a_body", 
         position = Vector3( 0, -0.35, -0.275 ), 
@@ -185,6 +191,12 @@ if ( self.x_heffy_939 ) then
 		name = "a_s_akmsu", 
         base_a_obj = "a_body", 
         position = Vector3( 0, 0.875, 0.6875 ), --0.7, 0.55 | 0.175, 0.1375
+        rotation = Rotation( 0, 5, 0 ) 
+	})
+	self:SetupAttachmentPoint("x_heffy_939", {
+		name = "a_s_ak101", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 0.875, 1.8 ), --0.7, 0.55 | 0.175, 0.1375
         rotation = Rotation( 0, 5, 0 ) 
 	})
 	self:SetupAttachmentPoint("x_heffy_939", {

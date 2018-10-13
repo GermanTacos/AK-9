@@ -38,10 +38,10 @@ function WeaponFactoryTweakData:akpack_setup_forbid( mod_one, mod_two )
 		table.insert(self.parts[mod_two].forbids, mod_one)
 	else
 		if not self.parts[mod_one] then
-			self:akpack_write_error( "forbid_setup", "fti", "part", mod_two )	
+			self:ak939_write_error( "forbid_setup", "fti", "part", mod_two )	
 		end
 		if not self.parts[mod_two] then
-			self:akpack_write_error( "forbid_setup", "fti", "part", mod_two )	
+			self:ak939_write_error( "forbid_setup", "fti", "part", mod_two )	
 		end
 	end
 end
@@ -52,16 +52,16 @@ function WeaponFactoryTweakData:akpack_check_override( mod_type, mod_woa )
 		if self[mod_woa] then
 			self[mod_woa].override = self[mod_woa].override or {}
 		else 
-			self:akpack_write_error( "override_check", "fti", mod_type, mod_woa )
+			self:ak939_write_error( "override_check", "fti", mod_type, mod_woa )
 		end
 	elseif mod_type == "part" then
 		if self.parts[mod_woa] then
 			self.parts[mod_woa].override = self.parts[mod_woa].override or {}
 		else 
-			self:akpack_write_error( "override_check", "fti", mod_type, mod_woa )
+			self:ak939_write_error( "override_check", "fti", mod_type, mod_woa )
 		end
 	else
-		self:akpack_write_error( "override_check", "fti", "mod_type", mod_type )
+		self:ak939_write_error( "override_check", "fti", "mod_type", mod_type )
 	end
 end
 
@@ -71,16 +71,16 @@ function WeaponFactoryTweakData:akpack_check_adds( mod_type, mod_woa )
 		if self[mod_woa] then
 			self[mod_woa].adds = self[mod_woa].adds or {}
 		else 
-			self:akpack_write_error( "adds_check", "fti", mod_type, mod_woa )
+			self:ak939_write_error( "adds_check", "fti", mod_type, mod_woa )
 		end
 	elseif mod_type == "part" then
 		if self.parts[mod_woa] then
 			self.parts[mod_woa].adds = self.parts[mod_woa].adds or {}
 		else 
-			self:akpack_write_error( "adds_check", "fti", mod_type, mod_woa )
+			self:ak939_write_error( "adds_check", "fti", mod_type, mod_woa )
 		end
 	else
-		self:akpack_write_error( "adds_check", "fti", "mod_type", mod_type )
+		self:ak939_write_error( "adds_check", "fti", "mod_type", mod_type )
 	end
 end
 
@@ -92,21 +92,21 @@ function WeaponFactoryTweakData:ak939_copy_part( att_og, att_cp )
         self.parts[att_cp].is_a_unlockable = true
         table.insert(self.wpn_fps_ass_heffy_939.uses_parts, att_cp)
     else
-        self:akpack_write_error( "copy_part", "fti", "part", att_og )    
+        self:ak939_write_error( "copy_part", "fti", "part", att_og )    
     end
 end
 
 --- ERROR Base ---
-function WeaponFactoryTweakData:akpack_write_error( func, cause, error_id, value  )
+function WeaponFactoryTweakData:ak939_write_error( func, cause, error_id, value  )
 	if func and cause and error_id then 
 		-- fti = failed to index
 		if cause == "fti" and value then
 			if error_id == "part" then
-				log("AK101_ERROR: (" .. func .. ")Attempt to index Part ID: '" .. value .. "' (a nil value)")
+				log("AK9_ERROR: (" .. func .. ")Attempt to index Part ID: '" .. value .. "' (a nil value)")
 			elseif error_id == "wpn" then
-				log("AK101_ERROR: (" .. func .. ")Attempt to index Weapon ID: '" .. value .. "' (a nil value)")
+				log("AK9_ERROR: (" .. func .. ")Attempt to index Weapon ID: '" .. value .. "' (a nil value)")
 			elseif error_id == "mod_type" then
-				log("AK101_ERROR: (" .. func .. ")Attempt to index mod_type: '" .. value .. "' (a nil value)")
+				log("AK9_ERROR: (" .. func .. ")Attempt to index mod_type: '" .. value .. "' (a nil value)")
 			end
 		end
 	end
@@ -234,7 +234,6 @@ if self.wpn_fps_ass_heffy_762 then
 		"wpn_fps_ass_heffy_762_st_akmsu",
 		"wpn_fps_ass_heffy_762_st_rpk",
 		"wpn_fps_ass_heffy_762_st_ak103",
-		"wpn_fps_ass_heffy_762_st_vepr",
 		"wpn_fps_ass_heffy_762_st_bl_t56",
 		"wpn_fps_ass_heffy_762_st_br_t56",
 		"wpn_fps_ass_heffy_762_st_mpi",
@@ -428,7 +427,6 @@ if self.wpn_fps_ass_heffy_762 then
 		"wpn_fps_ass_heffy_762_st_akm_worn",
 		"wpn_fps_ass_heffy_762_lfg_rpk",
 		"wpn_fps_ass_heffy_762_st_rpk",
-		"wpn_fps_ass_heffy_762_st_vepr",
 		"wpn_fps_ass_heffy_762_lfg_bl_t56",
 		"wpn_fps_ass_heffy_762_pg_bl_t56",
 		"wpn_fps_ass_heffy_762_st_bl_t56",
