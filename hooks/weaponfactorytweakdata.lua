@@ -380,6 +380,7 @@ self:akpack_check_override( "part", "wpn_fps_ass_heffy_939_lr_ak9" )
 self:akpack_check_adds( "wpn", "wpn_fps_ass_heffy_939" )
 for i, o_id in ipairs(all_ak9sight) do
 	self.wpn_fps_ass_heffy_939.adds[o_id] = {"wpn_fps_upg_o_ak9_scopemount"}
+	self.wpn_fps_ass_x_heffy_939.adds[o_id] = {"wpn_fps_upg_o_ak9_scopemount"}
 end
 	
 -------------------------------------
@@ -452,6 +453,7 @@ if self.wpn_fps_ass_heffy_762 then
 	for i, part_id in ipairs(ak47parts) do
 		if self.parts[part_id].pcs then
 			table.insert(self.wpn_fps_ass_heffy_939.uses_parts, part_id)
+			table.insert(self.wpn_fps_ass_x_heffy_939.uses_parts, part_id)
 		end
     end
 	
@@ -475,6 +477,7 @@ if self.wpn_fps_ass_heffy_545 then
     for i, part_id in ipairs(ak74parts) do
 		if self.parts[part_id].pcs then
 			table.insert(self.wpn_fps_ass_heffy_939.uses_parts, part_id)
+			table.insert(self.wpn_fps_ass_x_heffy_939.uses_parts, part_id)
 		end
     end
 	
@@ -496,6 +499,7 @@ if self.parts.wpn_fps_ass_heffy_all_fc_pg_poly_pl and self.wpn_fps_ass_heffy_762
 
 	for i, part_id in ipairs (akwoodcolors) do
 		table.insert(self.wpn_fps_ass_heffy_939.uses_parts, part_id)
+		table.insert(self.wpn_fps_ass_x_heffy_939.uses_parts, part_id)
 	end
 		
 end

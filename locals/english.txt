@@ -2,6 +2,9 @@
 	"bm_w_heffy_939" : "AK-9",
 	"bm_w_heffy_939_desc" : "Designed in the mid 2000s, the AK-9 was intended to be a silent, flame-less entry into the Kalashnikov series of rifles. Its usage and production are limited, and the weapon is currently being redesigned, as it has not been officially adopted.",
 	
+	"bm_w_x_heffy_939" : "Akimbo AK-9",
+	"bm_w_x_heffy_939_desc" : "Akimbo version of the AK-9",
+	
 	"menu_l_global_value_heffy_939" : "This is an AK Pack Weapon!",
 	
 	"bm_menu_barrel2"        : "Barrel",
