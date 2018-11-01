@@ -343,6 +343,34 @@ if self.wpn_fps_ass_heffy_545 then
 
 end
 
+-----------------------------------------
+----<A><K><4><7> -CAFCW- <A><K><4><7>----
+-----------------------------------------
+if BeardLib.Utils:FindMod("gsup") then
+	local AK9SneakySuppressorPack = {
+		"wpn_fps_ass_ns_g_sup3",
+		"wpn_fps_ass_ns_g_sup4",
+		"wpn_fps_ass_ns_g_sup5"
+	}
+	for id, part_id in pairs(AK9SneakySuppressorPack) do
+		table.insert(self.wpn_fps_ass_heffy_939.uses_parts, part_id)
+		table.insert(self.wpn_fps_ass_x_heffy_939.uses_parts, part_id)
+		table.insert(all_ak9ext, part_id)
+	end
+end
+
+if BeardLib.Utils:FindMod("Tromix Barrel-Ext") then
+	table.insert(self.wpn_fps_ass_heffy_939.uses_parts, "wpn_fps_upg_ns_ass_smg_tromix")	
+	table.insert(self.wpn_fps_ass_x_heffy_939.uses_parts, "wpn_fps_upg_ns_ass_smg_tromix")	
+	table.insert(all_ak9ext, "wpn_fps_upg_ns_ass_smg_tromix")
+end
+
+if BeardLib.Utils:FindMod("M82 Muzzle Brake") then
+	table.insert(all_ak9ext, "wpn_fps_upg_ns_m82")
+	table.insert(all_ak9ext, "wpn_fps_upg_ns_aw50")
+end
+
+
 --------------------------------------
 ----<A><K><9> -Override- <A><K><9>----
 --------------------------------------

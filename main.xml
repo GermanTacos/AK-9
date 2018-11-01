@@ -110,6 +110,14 @@
 		<pcs/>
 	</WeaponMod>
 	
+	<!-- Sound -->
+	
+	<WeaponMod id="wpn_fps_ass_heffy_939_so_pr" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="sound" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+	<sound_switch suppressed="regular_b"/>
+	   <stats damage="0"/>
+	   <pcs/>
+    </WeaponMod>
+	
 	<Weapon unlock_level="0">
 		<weapon id="heffy_939" based_on="flint" CLIP_AMMO_MAX="20" use_stance="heffy_939_ads" NR_CLIPS_MAX="4" damage_near="40000" damage_far="42400" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_939">
 			<stats damage="80" spread="17" spread_moving="17" recoil="12" concealment="25" alert_size="10" suppression="14"/>
@@ -233,6 +241,8 @@
 				<value_node value="wpn_fps_upg_o_spot"/>
 				
 				<value_node value="wpn_fps_upg_o_ak9_l_scopemount"/>
+				
+				<value_node value="wpn_fps_ass_heffy_939_so_pr"/>
 				
 			</uses_parts>
 			
@@ -368,6 +378,8 @@
 				
 				<value_node value="wpn_fps_upg_o_ak9_l_scopemount"/>
 				
+				<value_node value="wpn_fps_ass_heffy_939_so_pr"/>
+				
 			</uses_parts>
 			
 		</factory>
@@ -377,10 +389,10 @@
 	
 	<Sounds directory="assets">
 		<sound id="ak9_fire_single" path="sounds/ak9_fire_auto.ogg" prefix="regular"/>
-		<sound id="ak9_fire_single" path="sounds/ak9_blops_fire.ogg" prefix="regular_a"/>
-		<redirect id="ak9_fire_single" to="akm_fire" prefix="suppressed_a"/>
-		<redirect id="ak9_fire_single" to="akm_fire" prefix="suppressed_b"/>
-		<redirect id="ak9_fire_single" to="akm_fire" prefix="suppressed_c"/>
+		<sound id="ak9_fire_single" path="sounds/ak9_fire_auto_pr.ogg" prefix="regular_b"/>
+		<sound id="ak9_fire_single" path="sounds/ak9_fire_sup.ogg" prefix="suppressed_a"/>
+		<sound id="ak9_fire_single" path="sounds/ak9_fire_sup.ogg" prefix="suppressed_b"/>
+		<sound id="ak9_fire_single" path="sounds/ak9_fire_sup.ogg" prefix="suppressed_c"/>
 	</Sounds>
 	
 	<AddFiles directory="assets">
