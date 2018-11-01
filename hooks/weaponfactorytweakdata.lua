@@ -245,12 +245,12 @@ if self.wpn_fps_ass_heffy_762 then
 		"wpn_fps_ass_heffy_762_st_rk62",
 	}
 	
-	for i, part_id in ipairs(ak47stocks) do
+	for i, part_id in pairs(ak47stocks) do
 		table.insert(all_ak9stock, part_id)
 		table.insert(ak9stock, part_id)
 	end
 	
-	for i, part_id in ipairs(ak47stocks) do
+	for i, part_id in pairs(ak47stocks) do
 		if part_id ~= "wpn_fps_ass_heffy_all_st_ak47" and part_id ~= "wpn_fps_ass_heffy_762_st_ak103" then
 			self.parts.wpn_fps_ass_heffy_939_lr_ak9.override[part_id] = {a_obj="a_s_akmsu"}
 		elseif part_id == "wpn_fps_ass_heffy_all_st_ak47" then
@@ -268,11 +268,11 @@ if self.wpn_fps_ass_heffy_762 then
 		"wpn_fps_ass_heffy_762_sp_amd63",
 	}
 	
-	for i, part_id in ipairs(ak47stockparts) do
+	for i, part_id in pairs(ak47stockparts) do
 		table.insert(ak9stockpad, part_id)
 	end
 	
-	for i, part_id in ipairs(ak47stockparts) do
+	for i, part_id in pairs(ak47stockparts) do
 		if part_id ~= "wpn_fps_ass_heffy_762_sp_ak47" then
 			self.parts.wpn_fps_ass_heffy_939_lr_ak9.override[part_id] = {a_obj="a_s_akmsu"}
 		else
@@ -293,7 +293,7 @@ if self.wpn_fps_ass_heffy_762 then
 		"wpn_fps_ass_heffy_762_pg_rk62",
 	}
 	
-	for i, part_id in ipairs(ak47grips) do
+	for i, part_id in pairs(ak47grips) do
 		table.insert(ak9grips, part_id)
 	end
 
@@ -307,12 +307,12 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_545_st_mpi",
 	}
 	
-	for i, part_id in ipairs(ak74stocks) do
+	for i, part_id in pairs(ak74stocks) do
 		table.insert(all_ak9stock, part_id)
 		table.insert(ak9stock, part_id)
 	end
 	
-	for i, part_id in ipairs(ak74stocks) do
+	for i, part_id in pairs(ak74stocks) do
 		self.parts.wpn_fps_ass_heffy_939_lr_ak9.override[part_id] = {a_obj="a_s_akmsu"}
 	end
 	
@@ -324,11 +324,11 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_545_stp_mpi",
 	}
 	
-	for i, part_id in ipairs(ak74stockparts) do
+	for i, part_id in pairs(ak74stockparts) do
 		table.insert(ak9stockpad, part_id)
 	end
 	
-	for i, part_id in ipairs(ak74stockparts) do
+	for i, part_id in pairs(ak74stockparts) do
 		self.parts.wpn_fps_ass_heffy_939_lr_ak9.override[part_id] = {a_obj="a_s_akmsu"}
 	end
 	
@@ -337,7 +337,7 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_545_pg_mpi",
 	}
 	
-	for i, part_id in ipairs(ak74grips) do
+	for i, part_id in pairs(ak74grips) do
 		table.insert(ak9grips, part_id)
 	end
 
@@ -348,24 +348,24 @@ end
 --------------------------------------
 
 --- Barrel ---
-for i, ba_id in ipairs(all_ak9barrel) do
+for i, ba_id in pairs(all_ak9barrel) do
 	self:akpack_check_override( "part", ba_id )
 end
 
 -- Default length barrel barrel extension and front sight override --
-for i, ba_id in ipairs(ak9barrel) do
-	for i, ext_id in ipairs(all_ak9ext) do
+for i, ba_id in pairs(ak9barrel) do
+	for i, ext_id in pairs(all_ak9ext) do
 		if ext_id ~= "wpn_fps_ass_heffy_939_fh_dummy" then
 			self.parts[ba_id].override[ext_id] = {a_obj = "a_ns"}
 		end
 	end
-	for i, fo_id in ipairs(all_ak9fo) do
+	for i, fo_id in pairs(all_ak9fo) do
 		self.parts[ba_id].override[fo_id] = {}
 	end
 end
 
 -- Other length barrel Front Sight overrides --
-for i, fo_id in ipairs(all_ak9fo) do
+for i, fo_id in pairs(all_ak9fo) do
 	self.parts.wpn_fps_ass_heffy_939_ba_ak9.override[fo_id] = {a_obj = "a_fo_ak9"}
 end
 
@@ -378,7 +378,7 @@ self:akpack_check_override( "part", "wpn_fps_ass_heffy_939_lr_ak9" )
 
 --- Gun ---
 self:akpack_check_adds( "wpn", "wpn_fps_ass_heffy_939" )
-for i, o_id in ipairs(all_ak9sight) do
+for i, o_id in pairs(all_ak9sight) do
 	self.wpn_fps_ass_heffy_939.adds[o_id] = {"wpn_fps_upg_o_ak9_scopemount"}
 	self.wpn_fps_ass_x_heffy_939.adds[o_id] = {"wpn_fps_upg_o_ak9_scopemount"}
 end
@@ -393,7 +393,7 @@ end
 
 --- Vanilla sights ---
 -- non-acoc, default sights --
-for i, o_id in ipairs(nonacog_aksight) do
+for i, o_id in pairs(nonacog_aksight) do
 	self.parts[o_id].stance_mod.wpn_fps_ass_heffy_939 = {translation = Vector3(0, 7, -3.7)}
 end
 -- other sights --
@@ -450,7 +450,7 @@ if self.wpn_fps_ass_heffy_762 then
 		"wpn_fps_ass_heffy_762_st_rk62",
 	}
 	
-	for i, part_id in ipairs(ak47parts) do
+	for i, part_id in pairs(ak47parts) do
 		if self.parts[part_id].pcs then
 			table.insert(self.wpn_fps_ass_heffy_939.uses_parts, part_id)
 			table.insert(self.wpn_fps_ass_x_heffy_939.uses_parts, part_id)
@@ -474,7 +474,7 @@ if self.wpn_fps_ass_heffy_545 then
 		"wpn_fps_ass_heffy_545_st_mpi",
 	}
 	
-    for i, part_id in ipairs(ak74parts) do
+    for i, part_id in pairs(ak74parts) do
 		if self.parts[part_id].pcs then
 			table.insert(self.wpn_fps_ass_heffy_939.uses_parts, part_id)
 			table.insert(self.wpn_fps_ass_x_heffy_939.uses_parts, part_id)
@@ -497,7 +497,7 @@ if self.parts.wpn_fps_ass_heffy_all_fc_pg_poly_pl and self.wpn_fps_ass_heffy_762
 		"wpn_fps_ass_heffy_all_fc_st_wood_lac",
 	}
 
-	for i, part_id in ipairs (akwoodcolors) do
+	for i, part_id in pairs (akwoodcolors) do
 		table.insert(self.wpn_fps_ass_heffy_939.uses_parts, part_id)
 		table.insert(self.wpn_fps_ass_x_heffy_939.uses_parts, part_id)
 	end
