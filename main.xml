@@ -119,7 +119,7 @@
     </WeaponMod>
 	
 	<Weapon unlock_level="0">
-		<weapon id="heffy_939" based_on="flint" CLIP_AMMO_MAX="20" use_stance="heffy_939_ads" NR_CLIPS_MAX="4" damage_near="40000" damage_far="42400" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_939">
+		<weapon id="heffy_939" based_on="flint" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="4" damage_near="40000" damage_far="42400" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_939">
 			<stats damage="80" spread="17" spread_moving="17" recoil="12" concealment="25" alert_size="10" suppression="14"/>
 			<fire_mode_data fire_rate="0.0774193548387097"/>
 			<use_data selection_index="1"/>
@@ -247,7 +247,11 @@
 			</uses_parts>
 			
 		</factory>
-		<stance/>
+		<stance>
+			<steelsight>
+				<shoulders translation="-8.572 -2.166 4.78"/>
+			</steelsight>
+		</stance>
 		
 	</Weapon>
 	
@@ -621,7 +625,7 @@
 	</AddFiles>
 	
 	<Hooks directory="hooks">
-		<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>
+		<!--<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/> -->
 		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
 	</Hooks>
