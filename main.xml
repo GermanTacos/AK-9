@@ -397,6 +397,34 @@
 		<sound id="ak9_fire_single" path="sounds/ak9_fire_sup.ogg" prefix="suppressed_a"/>
 		<sound id="ak9_fire_single" path="sounds/ak9_fire_sup.ogg" prefix="suppressed_b"/>
 		<sound id="ak9_fire_single" path="sounds/ak9_fire_sup.ogg" prefix="suppressed_c"/>
+		<sound id="wp_flint_mag_out" path="heffy_762_mag_out.ogg" prefix="first"/>
+		<sound id="wp_flint_mag_out" path="heffy_762_mag_out.ogg" prefix="rb6"/>
+		<sound id="wp_flint_mag_out" path="heffy_762_mag_out.ogg" prefix="grass"/>
+		<sound id="wp_flint_mag_out" path="heffy_762_mag_out.ogg" prefix="stone"/>
+		<sound id="wp_flint_mag_out" path="heffy_762_mag_out.ogg" prefix="concrete"/>
+		<sound id="wp_flint_mag_out" path="heffy_762_mag_out.ogg" prefix="asphalt"/>
+		<sound id="wp_flint_mag_out" path="heffy_762_mag_out.ogg" prefix="dirt"/>
+		<sound id="wp_flint_mag_in" path="heffy_762_mag_in.ogg" prefix="grass"/>
+		<sound id="wp_flint_mag_in" path="heffy_762_mag_in.ogg" prefix="rb6"/>
+		<sound id="wp_flint_mag_in" path="heffy_762_mag_in.ogg" prefix="first"/>
+		<sound id="wp_flint_mag_in" path="heffy_762_mag_in.ogg" prefix="stone"/>
+		<sound id="wp_flint_mag_in" path="heffy_762_mag_in.ogg" prefix="concrete"/>
+		<sound id="wp_flint_mag_in" path="heffy_762_mag_in.ogg" prefix="asphalt"/>
+		<sound id="wp_flint_mag_in" path="heffy_762_mag_in.ogg" prefix="dirt"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="grass"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="rb6"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="first"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="stone"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="concrete"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="asphalt"/>
+		<sound id="wp_flint_cock_pull" path="heffy_762_cock_pull.ogg" prefix="dirt"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="grass"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="rb6"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="first"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="stone"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="concrete"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="asphalt"/>
+		<sound id="wp_flint_cock_release" path="heffy_762_cock_release.ogg" prefix="dirt"/>
 	</Sounds>
 	
 	<AddFiles directory="assets">
