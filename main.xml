@@ -391,12 +391,12 @@
 		
 	</Weapon>
 	
-	<Sounds directory="assets">
-		<sound id="ak9_fire_single" path="sounds/ak9_fire_auto.ogg" prefix="regular"/>
-		<sound id="ak9_fire_single" path="sounds/ak9_fire_auto_pr.ogg" prefix="regular_b"/>
-		<sound id="ak9_fire_single" path="sounds/ak9_fire_sup.ogg" prefix="suppressed_a"/>
-		<sound id="ak9_fire_single" path="sounds/ak9_fire_sup.ogg" prefix="suppressed_b"/>
-		<sound id="ak9_fire_single" path="sounds/ak9_fire_sup.ogg" prefix="suppressed_c"/>
+	<Sounds directory="assets\sounds">
+		<sound id="ak9_fire_single" path="ak9_fire_auto.ogg" prefix="regular"/>
+		<sound id="ak9_fire_single" path="ak9_fire_auto_pr.ogg" prefix="regular_b"/>
+		<sound id="ak9_fire_single" path="ak9_fire_sup.ogg" prefix="suppressed_a"/>
+		<sound id="ak9_fire_single" path="ak9_fire_sup.ogg" prefix="suppressed_b"/>
+		<sound id="ak9_fire_single" path="ak9_fire_sup.ogg" prefix="suppressed_c"/>
 		<sound id="wp_flint_mag_out" path="heffy_762_mag_out.ogg" prefix="first"/>
 		<sound id="wp_flint_mag_out" path="heffy_762_mag_out.ogg" prefix="rb6"/>
 		<sound id="wp_flint_mag_out" path="heffy_762_mag_out.ogg" prefix="grass"/>
