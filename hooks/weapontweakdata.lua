@@ -212,6 +212,31 @@ if ( self.x_heffy_939 ) then
 	
 --- Magazines ---
 	
+--- Russian Sights ---
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_o_1p29",
+		base_a_obj = "a_o",
+		position = Vector3(0.6, -13, 0.2),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_o_1pn93",
+		base_a_obj = "a_o",
+		position = Vector3(-0.7, -13, 1.55),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_o_ekp_1s_03",
+		base_a_obj = "a_o",
+		position = Vector3(0, -7, -1.2),	--	position = Vector3(-0.3, -2, -1.7),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_o_pso1",
+		base_a_obj = "a_o",
+		position = Vector3(-0.7, -7, -1.2),
+		rotation = Rotation(0, 0, 0)
+	})
 end
 end)
 
