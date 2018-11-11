@@ -249,7 +249,7 @@
 		</factory>
 		<stance>
 			<steelsight>
-				<shoulders translation="-8.572 -2.166 4.78"/>
+				<shoulders translation="-10.25 -5.166 5"/>
 			</steelsight>
 		</stance>
 		
@@ -388,7 +388,6 @@
 			
 		</factory>
 		<stance/>
-		
 	</Weapon>
 	
 	<Sounds directory="assets\sounds">
