@@ -649,6 +649,9 @@
 		<unit            path="units/mods/weapons/wpn_fps_ass_x_heffy_939/wpn_fps_ass_x_heffy_939_npc"/>
 		
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/heffy_939"/>
+		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/x_heffy_939"/>
+		
+		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_m_tiss_20"/>
 
 	</AddFiles>
 	
