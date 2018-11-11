@@ -169,11 +169,12 @@ if ( self.x_heffy_939 ) then
 	
 -- Barrel fo positions --
 	self:SetupAttachmentPoint("x_heffy_939", {
-		name = "a_fo_ak9", 
-        base_a_obj = "a_body", 
-        position = Vector3( 0, -20.7, 0 ), 
-        rotation = Rotation( 0, 0, 0 ) 
-	})
+        name = "a_fo_ak9",
+        base_a_obj = "a_body",
+        part_attach_data = {{"wpn_fps_ass_heffy_939_ba_ak9"},"g_body"},
+        position = Vector3(0, -20.7, 0),
+        rotation = RotationCAP(0, 0, 0)
+    })
 --- Barrel positions with different FGs ---
 	
 --- Barrel extensions ---
