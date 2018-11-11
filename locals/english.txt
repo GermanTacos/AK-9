@@ -44,6 +44,10 @@
 	"bm_wp_wpn_fps_ass_heffy_939_lr_ak9"    : "AK-9 Receiver",
 	"bm_wp_wpn_fps_ass_heffy_939_ur_ak9"    : "AK-9 Dust Cover",
 	
+	"bm_wp_wpn_fps_ass_heffy_939_ba_tiss"   : "OTs-12 Tiss Barrel",
+	"bm_wp_wpn_fps_ass_heffy_939_pg_tiss"   : "OTs-12 Tiss Grip",
+	"bm_wp_wpn_fps_ass_heffy_939_st_tiss"   : "OTs-12 Tiss Stock",
+	
 	"bm_wp_wpn_fps_ass_heffy_939_m_tiss_20" : "Tiss Magazine",
 	
 	"bm_wp_wpn_fps_upg_o_ak9_l_scopemount"  : "Lower Scope Mount"

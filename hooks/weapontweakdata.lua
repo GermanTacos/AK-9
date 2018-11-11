@@ -78,7 +78,12 @@ if ( self.heffy_939 ) then
         rotation = Rotation( 0, 0, 0 ) 
 	})]]--
 -- Overide positions --
-	
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_b_tiss", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -3.9, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 --- Stocks ---
 	self:SetupAttachmentPoint("heffy_939", {
 		name = "a_s_akmsu", 
