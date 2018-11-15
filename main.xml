@@ -140,6 +140,7 @@
 		</adds>
 		<forbids>
 			<value_node value="wpn_fps_ass_heffy_939_ufg_tiss"/>
+			<value_node value="wpn_fps_ass_heffy_939_ro_tiss"/>
 		</forbids>
 		<pcs/>
 	</WeaponMod>
@@ -156,6 +157,7 @@
 		</adds>
 		<forbids>
 			<value_node value="wpn_fps_ass_heffy_939_lfg_tiss"/>
+			<value_node value="wpn_fps_ass_heffy_939_ro_tiss"/>
 		</forbids>
 		<pcs/>
 	</WeaponMod>
@@ -164,6 +166,21 @@
 	<WeaponMod id="wpn_fps_ass_heffy_939_lfgc_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_cap" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_lfgc_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
 		<!-- >:( -->
 	<WeaponMod id="wpn_fps_ass_heffy_939_ufgc_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_cap" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ufgc_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_ass_heffy_939_ro_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="rear_sight" a_obj="a_ro_tiss_std" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ro_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<forbids>
+			<value_node value="wpn_fps_ass_heffy_939_lfg_tiss"/>
+			<value_node value="wpn_fps_ass_heffy_939_ufg_tiss"/>
+		</forbids>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_ass_heffy_939_lr_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="dreceiver" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_lr_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+		<adds>
+			<value_node value="wpn_fps_ass_heffy_939_stp_ak9"/>
+		</adds>
+		<pcs/>
+	</WeaponMod>
 	
 	<!-- MAG -->
 	
@@ -287,6 +304,8 @@
 				<value_node value="wpn_fps_ass_heffy_939_ufg_tiss"/>
 				<value_node value="wpn_fps_ass_heffy_939_lfgc_tiss"/>
 				<value_node value="wpn_fps_ass_heffy_939_ufgc_tiss"/>
+				<value_node value="wpn_fps_ass_heffy_939_ro_tiss"/>
+				<value_node value="wpn_fps_ass_heffy_939_lr_tiss"/>
 				
 				<value_node value="wpn_fps_ass_heffy_939_m_bake_20"/>
 				
@@ -434,6 +453,10 @@
 				<value_node value="wpn_fps_ass_heffy_939_st_tiss"/>
 				<value_node value="wpn_fps_ass_heffy_939_lfg_tiss"/>
 				<value_node value="wpn_fps_ass_heffy_939_ufg_tiss"/>
+				<value_node value="wpn_fps_ass_heffy_939_lfgc_tiss"/>
+				<value_node value="wpn_fps_ass_heffy_939_ufgc_tiss"/>
+				<value_node value="wpn_fps_ass_heffy_939_ro_tiss"/>
+				<value_node value="wpn_fps_ass_heffy_939_lr_tiss"/>
 				
 				<value_node value="wpn_fps_ass_heffy_939_m_bake_20"/>
 				
@@ -753,6 +776,12 @@
 		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ro_tiss"/>
 		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ro_tiss"/>
 		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ro_tiss_thq"/>
+
+		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_lr_tiss"/>
+		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_lr_tiss"/>
+		<object          path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_lr_tiss"/>
+		<unit            path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_lr_tiss"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_lr_tiss_thq"/>
 
 		<!-- MAG PTS -->
 	

@@ -59,7 +59,15 @@ if ( self.heffy_939 ) then
 	})
 --- Front sights ---
 -- Override by lfg ---
-	
+--- Rear sights ---
+-- Override by barrel --
+-- Override by receiver ---
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_ro_tiss_std", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 3.9, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 -- Barrel fo positions --
 	self:SetupAttachmentPoint("heffy_939", {
 		name = "a_fo_ak9", 
@@ -116,6 +124,31 @@ if ( self.heffy_939 ) then
 	
 --- Magazines ---
 	
+--- Russian Sights ---
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_o_1p29",
+		base_a_obj = "a_o",
+		position = Vector3(0.6, -13, 0.2),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_o_1pn93",
+		base_a_obj = "a_o",
+		position = Vector3(-0.7, -13, 1.55),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_o_ekp_1s_03",
+		base_a_obj = "a_o",
+		position = Vector3(0, -7, -1.2),	--	position = Vector3(-0.3, -2, -1.7),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_o_pso1",
+		base_a_obj = "a_o",
+		position = Vector3(-0.7, -7, -1.2),
+		rotation = Rotation(0, 0, 0)
+	})
 end
 
 if ( self.x_heffy_939 ) then
@@ -141,7 +174,7 @@ if ( self.x_heffy_939 ) then
 	self:SetupAttachmentPoint("x_heffy_939", {
 		name = "a_ns", 
         base_a_obj = "a_ns", 
-        position = Vector3( 0, -16, 0 ), 
+        position = Vector3( 0, -15.75, 0 ), -- -16
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("x_heffy_939", {
@@ -177,27 +210,45 @@ if ( self.x_heffy_939 ) then
 	})
 --- Front sights ---
 -- Override by lfg ---
-	
+--- Rear sights ---
+-- Override by barrel --
+-- Override by receiver ---
+	self:SetupAttachmentPoint("x_heffy_939", {
+		name = "a_ro_tiss_std", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 3.9, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 -- Barrel fo positions --
 	self:SetupAttachmentPoint("x_heffy_939", {
-        name = "a_fo_ak9",
-        base_a_obj = "a_body",
-        part_attach_data = {{"wpn_fps_ass_heffy_939_ba_ak9"},"g_body"},
-        position = Vector3(0, -20.7, 0),
-        rotation = RotationCAP(0, 0, 0)
-    })
+		name = "a_fo_ak9", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -20.7, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("x_heffy_939", {
+		name = "a_fo_tiss", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -23.1, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 --- Barrel positions with different FGs ---
+	self:SetupAttachmentPoint("x_heffy_939", {
+		name = "a_b_tiss", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -2.4, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 	
 --- Barrel extensions ---
 -- Default positions --
---[[self:SetupAttachmentPoint("x_heffy_939", {
-		name = "a_ns_ak102", 
-        base_a_obj = "a_ns", 
-        position = Vector3( 0, -5.3, 0 ), 
-        rotation = Rotation( 0, 0, 0 ) 
-	})]]--
 -- Overide positions --
-	
+	self:SetupAttachmentPoint("x_heffy_939", {
+		name = "a_ns_tiss", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, -18.15, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 --- Stocks ---
 	self:SetupAttachmentPoint("x_heffy_939", {
 		name = "a_s_akmsu", 
@@ -218,37 +269,14 @@ if ( self.x_heffy_939 ) then
         rotation = Rotation( 0, -2.5, 0 ) 
 	})
 	
---- Pistol Grips ---
-	
---- Stock Pads ---
-	
---- Magazines ---
-	
---- Russian Sights ---
-	self:SetupAttachmentPoint("heffy_939", {
-		name = "a_o_1p29",
-		base_a_obj = "a_o",
-		position = Vector3(0.6, -13, 0.2),
-		rotation = Rotation(0, 0, 0)
-	})
-	self:SetupAttachmentPoint("heffy_939", {
-		name = "a_o_1pn93",
-		base_a_obj = "a_o",
-		position = Vector3(-0.7, -13, 1.55),
-		rotation = Rotation(0, 0, 0)
-	})
-	self:SetupAttachmentPoint("heffy_939", {
-		name = "a_o_ekp_1s_03",
-		base_a_obj = "a_o",
-		position = Vector3(0, -7, -1.2),	--	position = Vector3(-0.3, -2, -1.7),
-		rotation = Rotation(0, 0, 0)
-	})
-	self:SetupAttachmentPoint("heffy_939", {
-		name = "a_o_pso1",
-		base_a_obj = "a_o",
-		position = Vector3(-0.7, -7, -1.2),
-		rotation = Rotation(0, 0, 0)
-	})
+-- Barrel fo positions --
+	self:SetupAttachmentPoint("x_heffy_939", {
+        name = "a_fo_ak9",
+        base_a_obj = "a_body",
+        part_attach_data = {{"wpn_fps_ass_heffy_939_ba_ak9"},"g_body"},
+        position = Vector3(0, -20.7, 0),
+        rotation = RotationCAP(0, 0, 0)
+    })
 end
 end)
 
