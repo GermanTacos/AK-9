@@ -384,7 +384,7 @@ end
 for id, ext_id in pairs(all_ak9ext) do
 	if ext_id == "wpn_fps_ass_heffy_939_fh_dummy" then
 		self.parts.wpn_fps_ass_heffy_939_lfg_tiss.override.wpn_fps_ass_heffy_939_ba_ak9.override[ext_id] = {a_obj = "a_ns_tiss", unit="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fh_ak9"}
-		self.parts.wpn_fps_ass_heffy_939_lfg_tiss.override.wpn_fps_ass_heffy_939_ba_tiss.override[ext_id] = {a_obj = "a_ns_tiss", unit="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fh_tiss"}
+		self.parts.wpn_fps_ass_heffy_939_lfg_tiss.override.wpn_fps_ass_heffy_939_ba_tiss.override[ext_id] = {a_obj = "a_ns_tiss", unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_fh_tiss"}
 	else
 		self.parts.wpn_fps_ass_heffy_939_lfg_tiss.override.wpn_fps_ass_heffy_939_ba_ak9.override[ext_id] = {a_obj = "a_ns_tiss"}
 		self.parts.wpn_fps_ass_heffy_939_lfg_tiss.override.wpn_fps_ass_heffy_939_ba_tiss.override[ext_id] = {a_obj = "a_ns_tiss"}
