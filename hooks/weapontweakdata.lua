@@ -23,7 +23,7 @@ if ( self.heffy_939 ) then
 	self:SetupAttachmentPoint("heffy_939", {
 		name = "a_ns", 
         base_a_obj = "a_ns", 
-        position = Vector3( 0, -16, 0 ), 
+        position = Vector3( 0, -15.75, 0 ), -- -16
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_939", {
@@ -67,21 +67,27 @@ if ( self.heffy_939 ) then
         position = Vector3( 0, -20.7, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
---- Barrel positions with different FGs ---
-	
---- Barrel extensions ---
--- Default positions --
---[[self:SetupAttachmentPoint("heffy_939", {
-		name = "a_ns_ak102", 
-        base_a_obj = "a_ns", 
-        position = Vector3( 0, -5.3, 0 ), 
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_fo_tiss", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -23.1, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
-	})]]--
--- Overide positions --
+	})
+--- Barrel positions with different FGs ---
 	self:SetupAttachmentPoint("heffy_939", {
 		name = "a_b_tiss", 
         base_a_obj = "a_body", 
-        position = Vector3( 0, -3.9, 0 ), 
+        position = Vector3( 0, -2.4, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	
+--- Barrel extensions ---
+-- Default positions --
+-- Overide positions --
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_ns_tiss", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, -18.15, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 --- Stocks ---

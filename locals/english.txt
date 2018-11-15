@@ -47,6 +47,8 @@
 	"bm_wp_wpn_fps_ass_heffy_939_ba_tiss"   : "OTs-12 Tiss Barrel",
 	"bm_wp_wpn_fps_ass_heffy_939_pg_tiss"   : "OTs-12 Tiss Grip",
 	"bm_wp_wpn_fps_ass_heffy_939_st_tiss"   : "OTs-12 Tiss Stock",
+	"bm_wp_wpn_fps_ass_heffy_939_lfg_tiss"   : "OTs-12 Lower Handguards",
+	"bm_wp_wpn_fps_ass_heffy_939_ufg_tiss"   : "OTs-12 Upper Handguard",
 	
 	"bm_wp_wpn_fps_ass_heffy_939_m_tiss_20" : "Tiss Magazine",
 	

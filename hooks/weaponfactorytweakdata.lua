@@ -167,7 +167,8 @@ local all_ak9ext = {
 	"wpn_fps_upg_ass_ns_surefire",
 	"wpn_fps_upg_ass_ns_battle",
 	"wpn_fps_ass_heffy_939_fh_dummy",
-	"wpn_fps_ass_heffy_939_fh_ak9"
+	"wpn_fps_ass_heffy_939_fh_ak9",
+	"wpn_fps_ass_heffy_939_fh_tiss"
 }
 
 --- Gadgets (Flashlights/Lasers) ---
@@ -380,6 +381,16 @@ for i, ba_id in pairs(all_ak9barrel) do
 	self:akpack_check_override( "part", ba_id )
 end
 
+for id, ext_id in pairs(all_ak9ext) do
+	if ext_id == "wpn_fps_ass_heffy_939_fh_dummy" then
+		self.parts.wpn_fps_ass_heffy_939_lfg_tiss.override.wpn_fps_ass_heffy_939_ba_ak9.override[ext_id] = {a_obj = "a_ns_tiss", unit="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fh_ak9"}
+		self.parts.wpn_fps_ass_heffy_939_lfg_tiss.override.wpn_fps_ass_heffy_939_ba_tiss.override[ext_id] = {a_obj = "a_ns_tiss", unit="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_fh_tiss"}
+	else
+		self.parts.wpn_fps_ass_heffy_939_lfg_tiss.override.wpn_fps_ass_heffy_939_ba_ak9.override[ext_id] = {a_obj = "a_ns_tiss"}
+		self.parts.wpn_fps_ass_heffy_939_lfg_tiss.override.wpn_fps_ass_heffy_939_ba_tiss.override[ext_id] = {a_obj = "a_ns_tiss"}
+	end
+end
+
 -- Default length barrel barrel extension and front sight override --
 for i, ba_id in pairs(ak9barrel) do
 	for i, ext_id in pairs(all_ak9ext) do
@@ -393,13 +404,14 @@ for i, ba_id in pairs(ak9barrel) do
 end
 
 -- Other length barrel Front Sight overrides --
-for i, fo_id in pairs(all_ak9fo) do
-	self.parts.wpn_fps_ass_heffy_939_ba_ak9.override[fo_id] = {a_obj = "a_fo_ak9"}
-end
+--for i, fo_id in pairs(all_ak9fo) do
+--	self.parts.wpn_fps_ass_heffy_939_ba_ak9.override[fo_id] = {a_obj = "a_fo_ak9"}
+--end
 
 --- Receiver aka Lower ---
 self:akpack_check_override( "part", "wpn_fps_ass_heffy_939_lr_ak9" )
 
+--- Foregrips ---
 ----------------------------------
 ----<A><K><9> -Adds- <A><K><9>----
 ----------------------------------
