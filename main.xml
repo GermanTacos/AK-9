@@ -154,6 +154,9 @@
 		<adds>
 			<value_node value="wpn_fps_ass_heffy_939_ufgc_tiss"/> 
 		</adds>
+		<forbids>
+			<value_node value="wpn_fps_ass_heffy_939_lfg_tiss"/>
+		</forbids>
 		<pcs/>
 	</WeaponMod>
 	
