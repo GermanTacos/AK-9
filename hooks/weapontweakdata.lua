@@ -251,7 +251,6 @@ if ( self.x_heffy_939 ) then
         position = Vector3( 0, -4.8, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
-	
 --- Barrel extensions ---
 -- Default positions --
 -- Overide positions --
