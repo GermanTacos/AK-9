@@ -145,7 +145,8 @@ local ak9barrel = {
 	"wpn_fps_ass_heffy_939_ba_ak9"
 }
 local all_ak9barrel = {
-	"wpn_fps_ass_heffy_939_ba_ak9"
+	"wpn_fps_ass_heffy_939_ba_ak9",
+	"wpn_fps_ass_heffy_939_ba_tiss"
 }
 
 --- Front Sights ---

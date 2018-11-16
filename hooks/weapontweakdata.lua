@@ -88,6 +88,12 @@ if ( self.heffy_939 ) then
         position = Vector3( 0, -2.4, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
+	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_b_tiss_tiss", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -4.8, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 	
 --- Barrel extensions ---
 -- Default positions --
@@ -237,6 +243,12 @@ if ( self.x_heffy_939 ) then
 		name = "a_b_tiss", 
         base_a_obj = "a_body", 
         position = Vector3( 0, -2.4, 0 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("x_heffy_939", {
+		name = "a_b_tiss_tiss", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -4.8, 0 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	
