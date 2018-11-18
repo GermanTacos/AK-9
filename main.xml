@@ -120,6 +120,7 @@
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_939_lfg_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_lower" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_lfg_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<weapon_stance_override bm_w_heffy_939="tiss_ads"/>
 		<override>
 			<wpn_fps_ass_heffy_939_ufg_ak9 		unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ufg_tiss"/> 
 			<wpn_fps_ass_heffy_939_ufgc_ak9 	unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ufgc_tiss"/> 
@@ -146,6 +147,7 @@
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_939_ufg_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_upper" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ufg_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<weapon_stance_override bm_w_heffy_939="tiss_ads"/>
 		<override>
 			<wpn_fps_ass_heffy_939_rsb_ak9 		unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_rsb_tiss"/> 
 			<wpn_fps_ass_heffy_939_ro_ak9 		unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ro_tiss"/> 
@@ -168,6 +170,7 @@
 	<WeaponMod id="wpn_fps_ass_heffy_939_ufgc_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_cap" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ufgc_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_939_ro_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="rear_sight" a_obj="a_ro_tiss_std" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ro_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<weapon_stance_override bm_w_heffy_939="tiss_ads"/>
 		<forbids>
 			<value_node value="wpn_fps_ass_heffy_939_lfg_tiss"/>
 			<value_node value="wpn_fps_ass_heffy_939_ufg_tiss"/>
@@ -853,7 +856,7 @@
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_ba_tiss"/>
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_ur_tiss"/>
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_fh_tiss"/>
-		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_g_tiss"/>
+		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_pg_tiss"/>
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_ro_tiss"/>
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_lfg_tiss"/>
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_ufg_tiss"/>
