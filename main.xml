@@ -703,7 +703,6 @@
 		
 		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/tiss_furniture"/>
 		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/tiss_furniture_thq"/>
-		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/tiss_furniture_wood"/>
 		
 		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/tiss_stock_df"/>
 		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/tiss_stock_nm"/>
@@ -799,9 +798,6 @@
 		
 		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/tiss_20_df"/>
 		<texture         path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/tiss_20_nm"/>
-		
-		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/tiss_20"/>
-		<material_config path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/tiss_20_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/wpn_fps_ass_heffy_939_m_tiss_20"/>
 		<model           path="units/mods/weapons/wpn_fps_ass_heffy_939_mag_pts/wpn_fps_ass_heffy_939_m_tiss_20"/>
