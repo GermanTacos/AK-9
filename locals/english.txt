@@ -58,6 +58,8 @@
 	
 	"bm_wp_wpn_fps_ass_heffy_939_m_tiss_20" : "Tiss Magazine",
 	
+	"bm_wp_wpn_fps_ass_heffy_939_st_none" 	: "No Stock",
+	
 	"bm_wp_wpn_fps_upg_o_ak9_l_scopemount"  : "Lower Scope Mount"
 
 }
