@@ -242,7 +242,7 @@
 			<animations reload_name_id="flint" equip_id="equip_flint" recoil_steelsight="true"/>
 		</weapon>
 
-		<factory id="wpn_fps_ass_heffy_939" unit="units/mods/weapons/wpn_fps_ass_heffy_939/wpn_fps_ass_heffy_939">
+		<factory id="wpn_fps_ass_heffy_939" unit="units/mods/weapons/wpn_fps_ass_heffy_939/wpn_fps_ass_heffy_939" stock_adapter="wpn_fps_ass_heffy_all_sad_alpha">
 			
 			<animations fire="recoil" reload="reload" reload_not_empty="reload_not_empty" fire_steelsight="recoil"/>
 			
@@ -398,7 +398,7 @@
 			<animations equip_id="equip_x_akmsu" reload_name_id="x_akmsu" ignore_fullreload="true" recoil_steelsight="true"	fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
 		</weapon>
 
-		<factory id="wpn_fps_ass_x_heffy_939" unit="units/mods/weapons/wpn_fps_ass_x_heffy_939/wpn_fps_ass_x_heffy_939">
+		<factory id="wpn_fps_ass_x_heffy_939" unit="units/mods/weapons/wpn_fps_ass_x_heffy_939/wpn_fps_ass_x_heffy_939" stock_adapter="wpn_fps_ass_heffy_all_sad_alpha">
 			
 			<animations fire="recoil" reload="reload" reload_not_empty="reload_not_empty" fire_steelsight="recoil"/>
 			

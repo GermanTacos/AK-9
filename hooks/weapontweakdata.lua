@@ -285,6 +285,12 @@ if ( self.x_heffy_939 ) then
         position = Vector3( 0, -0.35, -0.275 ), 
         rotation = Rotation( 0, -2.5, 0 ) 
 	})
+	self:SetupAttachmentPoint("x_heffy_939", {
+		name = "a_s", 
+        base_a_obj = "a_s", 
+        position = Vector3( 0, 0, 1 ), 
+        rotation = Rotation( 0, -2, 0 ) 
+	})
 	
 -- Barrel fo positions --
 	self:SetupAttachmentPoint("x_heffy_939", {
