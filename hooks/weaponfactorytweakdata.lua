@@ -433,16 +433,13 @@ end
 ------------------------------------
 
 --- Vanilla sights ---
--- non-acoc, default sights --
-for i, o_id in pairs(nonacog_aksight) do
-	self.parts[o_id].stance_mod.wpn_fps_ass_heffy_939 = {translation = Vector3(0, 7, -3.7)}
+for id, o_id in pairs(all_ak9sight) do
+	if self.parts[o_id].stance_mod.wpn_fps_ass_flint then
+		self.parts[o_id].stance_mod.wpn_fps_ass_heffy_939 = deep_clone(self.parts[o_id].stance_mod.wpn_fps_ass_flint)
+	else
+		log("[AK_Pack] [ERROR] WHO THE FUCK MESSED WITH SIGHT STANCES THIS TIME!? " .. o_id)
+	end
 end
--- other sights --
-self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_heffy_939 			   = deep_clone(self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_ass_flint)
-self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_heffy_939 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_flint)
-self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_heffy_939 = deep_clone(self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_flint)
-self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_heffy_939 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_flint)
-
 ------------------------------------
 ----<A><K><9> -Tweaks- <A><K><9>----
 ------------------------------------

@@ -22,7 +22,19 @@
 	
 	<WeaponMod id="wpn_fps_ass_heffy_939_gb_ak9" based_on="wpn_fps_ass_flint_body_upperreceiver" type="gas_block" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
 	
-	<WeaponMod id="wpn_fps_ass_heffy_939_int1_ak9" based_on="wpn_fps_ass_flint_body_upperreceiver" type="internal1" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	<!-- Stance attachment -->
+	<WeaponMod id="wpn_fps_ass_heffy_939_int1_ak9" based_on="wpn_fps_ass_flint_body_upperreceiver" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+		<stance_mod>
+			<wpn_fps_ass_heffy_939 rotation="0.00392698 -0 -0 -0.999992" translation="0 -5 1.35"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_ass_heffy_all_sm_cover>
+				<stance_mod>
+					<wpn_fps_ass_heffy_939 rotation="0 0 0 -1" translation="0 0 0"/>
+				</stance_mod>
+			</wpn_fps_ass_heffy_all_sm_cover>
+		</override>
+	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_939_int2_ak9" based_on="wpn_fps_ass_flint_body_upperreceiver" type="internal2" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
 	
@@ -374,7 +386,7 @@
 		</factory>
 		<stance>
 			<steelsight>
-				<shoulders translation="-10.25 -5.166 5"/>
+				<shoulders rotation="-0.000436332 -1.90386e-007 -0.000436332 -1" translation="-10.247 0.696 3.77"/>
 			</steelsight>
 		</stance>
 		
