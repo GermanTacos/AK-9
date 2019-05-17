@@ -59,6 +59,7 @@
 		<adds>
 			<value_node value="wpn_fps_ass_heffy_939_stp_ak9"/>
 		</adds>
+		<override/>
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_939_tr_ak9" based_on="wpn_fps_ass_flint_body_upperreceiver" type="trigger" unit="units/mods/weapons/wpn_fps_ass_heffy_939_ak9_pts/wpn_fps_ass_heffy_939_tr_ak9" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
