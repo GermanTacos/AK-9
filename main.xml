@@ -1,4 +1,4 @@
-<table name="AK-9" image="guis/ak9" color="Color(0.8, 0.2, 0.8)">
+<table name="AK-9" priority="4" image="guis/ak9" color="Color(0.8, 0.2, 0.8)">
 
 	<Localization directory="locals" default="english.txt"/>
 	
