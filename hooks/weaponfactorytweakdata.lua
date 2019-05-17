@@ -119,43 +119,43 @@ Hooks:PostHook( WeaponFactoryTweakData, "init", "AK9ModInit", function(self)
 ------------------------------------
 
 --- Stocks ---
-local all_ak9stock = {
+all_ak9stock = {
 	"wpn_fps_ass_heffy_939_st_ak9"
 }
-local ak9stock = {
+ak9stock = {
 	"wpn_fps_ass_heffy_939_st_ak9"
 }
 --- Stock Pads ---
-local ak9stockpad = {
+ak9stockpad = {
 	"wpn_fps_ass_heffy_939_stp_ak9",
 	"wpn_fps_ass_heffy_939_stp2_ak9"
 }
 --- Fore Grip ---
 -- Default length --
-local all_ak9lowerforegrip = {
+all_ak9lowerforegrip = {
 	"wpn_fps_ass_heffy_939_lfg_ak9"
 }
-local ak9foregrip = {
+ak9foregrip = {
 	"wpn_fps_ass_heffy_939_lfg_ak9"
 }
 
 --- Barrel ---
 -- Default length --
-local ak9barrel = {
+ak9barrel = {
 	"wpn_fps_ass_heffy_939_ba_ak9"
 }
-local all_ak9barrel = {
+all_ak9barrel = {
 	"wpn_fps_ass_heffy_939_ba_ak9",
 	"wpn_fps_ass_heffy_939_ba_tiss"
 }
 
 --- Front Sights ---
-local all_ak9fo = {
+all_ak9fo = {
 	"wpn_fps_ass_heffy_939_fo_ak9"
 }
 
 --- Barrel Extensions --
-local all_ak9ext = {
+all_ak9ext = {
 	"wpn_fps_upg_ns_ass_smg_large",
 	"wpn_fps_upg_ns_ass_smg_medium",
 	"wpn_fps_upg_ns_ass_smg_small",
@@ -173,7 +173,7 @@ local all_ak9ext = {
 }
 
 --- Gadgets (Flashlights/Lasers) ---
-local all_ak9fl = {
+all_ak9fl = {
 	"wpn_fps_upg_fl_ass_smg_sho_peqbox",
 	"wpn_fps_upg_fl_ass_smg_sho_surefire",
 	"wpn_fps_upg_fl_ass_peq15",
@@ -199,82 +199,25 @@ local all_ak9sight = {
 	"wpn_fps_upg_o_rx30",
 	"wpn_fps_upg_o_spot"
 }
-local nonacog_aksight = {
-	"wpn_fps_upg_o_specter",
-	"wpn_fps_upg_o_aimpoint",
-	"wpn_fps_upg_o_aimpoint_2",
-	"wpn_fps_upg_o_docter",
-	"wpn_fps_upg_o_eotech",
-	"wpn_fps_upg_o_t1micro",
-	"wpn_fps_upg_o_cmore",
-	"wpn_fps_upg_o_cs",
-	"wpn_fps_upg_o_eotech_xps",
-	"wpn_fps_upg_o_reflex",
-	"wpn_fps_upg_o_rx01",
-	"wpn_fps_upg_o_rx30",
-	"wpn_fps_upg_o_spot"
-}
 
 --- Grips ---
-local ak9grips = {
+ak9grips = {
 	"wpn_fps_ass_heffy_939_pg_ak9"
 }
 
 --- Compatibility Array Insertion ---
 
-self.parts.wpn_fps_ass_heffy_939_lr_ak9.override = {}
-
-self:akpack_check_override( "part", "wpn_fps_ass_heffy_939_lr_ak9" )
-
 if self.wpn_fps_ass_heffy_762 then
-
-	local ak47stocks = {
-		"wpn_fps_ass_heffy_all_st_ak47",
-		"wpn_fps_ass_heffy_762_st_akm",
-		"wpn_fps_ass_heffy_762_st_akm_worn",
-		"wpn_fps_ass_heffy_762_st_akms",
-		"wpn_fps_ass_heffy_762_st_akmsu",
-		"wpn_fps_ass_heffy_762_st_rpk",
-		"wpn_fps_ass_heffy_762_st_ak103",
-		"wpn_fps_ass_heffy_762_st_bl_t56",
-		"wpn_fps_ass_heffy_762_st_br_t56",
-		"wpn_fps_ass_heffy_762_st_mpi",
-		"wpn_fps_ass_heffy_762_st_2_mpi",
-		"wpn_fps_ass_heffy_762_st_amd63",
-		"wpn_fps_ass_heffy_762_st_amd65",
-		"wpn_fps_ass_heffy_762_st_m70",
-		"wpn_fps_ass_heffy_762_st_tabuk",
-		"wpn_fps_ass_heffy_762_st_rk62",
-	}
 	
-	for i, part_id in pairs(ak47stocks) do
-		table.insert(all_ak9stock, part_id)
-		table.insert(ak9stock, part_id)
-	end
-	
-	for i, part_id in pairs(ak47stocks) do
+	for i, part_id in pairs(heffy762stocks) do
 		if part_id ~= "wpn_fps_ass_heffy_all_st_ak47" and part_id ~= "wpn_fps_ass_heffy_762_st_ak103" then
 			self.parts.wpn_fps_ass_heffy_939_lr_ak9.override[part_id] = {a_obj="a_s_akmsu"}
 		elseif part_id == "wpn_fps_ass_heffy_all_st_ak47" then
 			self.parts.wpn_fps_ass_heffy_939_lr_ak9.override[part_id] = {a_obj="a_s_akmsu_ak47"}
 		end
 	end
-	
-	local ak47stockparts = {
-		"wpn_fps_ass_heffy_762_sp_ak47",
-		"wpn_fps_ass_heffy_762_sp_mpi",
-		"wpn_fps_ass_heffy_762_sp_2_mpi",
-		"wpn_fps_ass_heffy_762_sp_akm",
-		"wpn_fps_ass_heffy_762_sp_tabuk",
-		"wpn_fps_ass_heffy_762_stp_mpi",
-		"wpn_fps_ass_heffy_762_sp_amd63",
-	}
-	
-	for i, part_id in pairs(ak47stockparts) do
-		table.insert(ak9stockpad, part_id)
-	end
-	
-	for i, part_id in pairs(ak47stockparts) do
+		
+	for i, part_id in pairs(heffy762stockparts) do
 		if part_id ~= "wpn_fps_ass_heffy_762_sp_ak47" then
 			self.parts.wpn_fps_ass_heffy_939_lr_ak9.override[part_id] = {a_obj="a_s_akmsu"}
 		else
@@ -282,69 +225,7 @@ if self.wpn_fps_ass_heffy_762 then
 		end
 	end
 	
-	local ak47grips = {
-		"wpn_fps_ass_heffy_all_pg_ak47",
-		"wpn_fps_ass_heffy_762_pg_akm",
-		"wpn_fps_ass_heffy_762_pg_ak103",
-		"wpn_fps_ass_heffy_762_pg_bl_t56",
-		"wpn_fps_ass_heffy_762_pg_br_t56",
-		"wpn_fps_ass_heffy_762_pg_mpi",
-		"wpn_fps_ass_heffy_762_pg_amd63",
-		"wpn_fps_ass_heffy_762_pg_amd65",
-		"wpn_fps_ass_heffy_762_pg_m92",
-		"wpn_fps_ass_heffy_762_pg_rk62",
-	}
-	
-	for i, part_id in pairs(ak47grips) do
-		table.insert(ak9grips, part_id)
-	end
-
 end
-
-if self.wpn_fps_ass_heffy_545 then
-
-	local ak74stocks = {
-		"wpn_fps_ass_heffy_all_st_ak74",
-		"wpn_fps_ass_heffy_545_st_rpk74",
-		"wpn_fps_ass_heffy_545_st_mpi",
-	}
-	
-	for i, part_id in pairs(ak74stocks) do
-		table.insert(all_ak9stock, part_id)
-		table.insert(ak9stock, part_id)
-	end
-	
-	for i, part_id in pairs(ak74stocks) do
-		self.parts.wpn_fps_ass_heffy_939_lr_ak9.override[part_id] = {a_obj="a_s_akmsu"}
-	end
-	
-	local ak74stockparts = {
-		"wpn_fps_ass_heffy_545_stp_ak74",
-		"wpn_fps_ass_heffy_545_stp_ak74_2",
-		"wpn_fps_ass_heffy_545_stp_rpk74",
-		"wpn_fps_ass_heffy_545_str_rpk74",
-		"wpn_fps_ass_heffy_545_stp_mpi",
-	}
-	
-	for i, part_id in pairs(ak74stockparts) do
-		table.insert(ak9stockpad, part_id)
-	end
-	
-	for i, part_id in pairs(ak74stockparts) do
-		self.parts.wpn_fps_ass_heffy_939_lr_ak9.override[part_id] = {a_obj="a_s_akmsu"}
-	end
-	
-	local ak74grips = {
-		"wpn_fps_ass_heffy_all_pg_ak74",
-		"wpn_fps_ass_heffy_545_pg_mpi",
-	}
-	
-	for i, part_id in pairs(ak74grips) do
-		table.insert(ak9grips, part_id)
-	end
-
-end
-
 -----------------------------------------
 ----<A><K><4><7> -CAFCW- <A><K><4><7>----
 -----------------------------------------
@@ -450,8 +331,6 @@ self.parts.wpn_fps_ass_heffy_939_fh_dummy.pcs = nil
 ------------------------------------
 ----<A><K><9> -CLONES- <A><K><9>----
 ------------------------------------
-
-self:akpack_check_override( "wpn", "wpn_fps_ass_heffy_939" )
 
 if self.parts.wpn_fps_ass_heffy_all_fc_pg_poly_pl and self.wpn_fps_ass_heffy_762 or self.wpn_fps_ass_heffy_545 then
 
