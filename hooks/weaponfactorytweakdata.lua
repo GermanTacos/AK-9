@@ -301,6 +301,8 @@ self:akpack_check_override( "part", "wpn_fps_ass_heffy_939_lr_ak9" )
 --- Gun ---
 self:akpack_check_adds( "wpn", "wpn_fps_ass_heffy_939" )
 for i, o_id in pairs(all_ak9sight) do
+	table.insert(self.parts.wpn_fps_ass_heffy_939_ro_tiss.forbids, o_id)
+	table.insert(self.parts.wpn_fps_ass_heffy_939_ufg_tiss.forbids, o_id)
 	self.wpn_fps_ass_heffy_939.adds[o_id] = {"wpn_fps_upg_o_ak9_scopemount"}
 	self.wpn_fps_ass_x_heffy_939.adds[o_id] = {"wpn_fps_upg_o_ak9_scopemount"}
 end

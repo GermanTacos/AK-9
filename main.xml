@@ -160,12 +160,14 @@
 	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_939_ufg_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_upper" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ufg_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<weapon_stance_override bm_w_heffy_939="tiss_ads"/>
 		<override>
 			<wpn_fps_ass_heffy_939_rsb_ak9 		unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_rsb_tiss"/> 
 			<wpn_fps_ass_heffy_939_ro_ak9 		unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ro_tiss"/> 
-			<wpn_fps_upg_o_ak9_scopemount   	unit="units/mods/weapons/wpn_fps_ass_heffy_939_shared_pts/wpn_fps_upg_o_ak9_c_scopemount"/>
-			<wpn_fps_upg_o_ak9_l_scopemount 	unit="units/mods/weapons/wpn_fps_ass_heffy_939_shared_pts/wpn_fps_upg_o_ak9_lc_scopemount"/>
+			<wpn_fps_ass_heffy_939_int1_ak9>
+				<stance_mod>
+					<wpn_fps_ass_heffy_939 rotation="-0.00567229 -0 0 -0.999984" translation="0 -5 0.1"/>
+				</stance_mod>
+			</wpn_fps_ass_heffy_939_int1_ak9>
 		</override>
 		<adds>
 			<value_node value="wpn_fps_ass_heffy_939_ufgc_tiss"/> 
@@ -173,6 +175,7 @@
 		<forbids>
 			<value_node value="wpn_fps_ass_heffy_939_lfg_tiss"/>
 			<value_node value="wpn_fps_ass_heffy_939_ro_tiss"/>
+			<value_node value="wpn_fps_upg_o_ak9_l_scopemount"/>
 		</forbids>
 		<pcs/>
 	</WeaponMod>
@@ -183,11 +186,18 @@
 	<WeaponMod id="wpn_fps_ass_heffy_939_ufgc_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_cap" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ufgc_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
 	
 	<WeaponMod id="wpn_fps_ass_heffy_939_ro_tiss" based_on="wpn_fps_ass_flint_body_upperreceiver" type="rear_sight" a_obj="a_ro_tiss_std" unit="units/mods/weapons/wpn_fps_ass_heffy_939_tiss_pts/wpn_fps_ass_heffy_939_ro_tiss" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<weapon_stance_override bm_w_heffy_939="tiss_ads"/>
 		<forbids>
 			<value_node value="wpn_fps_ass_heffy_939_lfg_tiss"/>
 			<value_node value="wpn_fps_ass_heffy_939_ufg_tiss"/>
+			<value_node value="wpn_fps_upg_o_ak9_l_scopemount"/>
 		</forbids>
+		<override>
+			<wpn_fps_ass_heffy_939_int1_ak9>
+				<stance_mod>
+					<wpn_fps_ass_heffy_939 rotation="-0.00567229 -0 0 -0.999984" translation="0 -5 0.1"/>
+				</stance_mod>
+			</wpn_fps_ass_heffy_939_int1_ak9>
+		</override>
 		<pcs/>
 	</WeaponMod>
 	
@@ -195,6 +205,9 @@
 		<adds>
 			<value_node value="wpn_fps_ass_heffy_939_stp_ak9"/>
 		</adds>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_ak9_scopemount"/>
+		</forbids>
 		<override/>
 		<pcs/>
 	</WeaponMod>
