@@ -205,9 +205,7 @@
 		<adds>
 			<value_node value="wpn_fps_ass_heffy_939_stp_ak9"/>
 		</adds>
-		<forbids>
-			<value_node value="wpn_fps_upg_o_ak9_scopemount"/>
-		</forbids>
+		<forbids/>
 		<override/>
 		<pcs/>
 	</WeaponMod>

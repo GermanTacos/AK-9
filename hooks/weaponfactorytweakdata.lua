@@ -199,6 +199,22 @@ local all_ak9sight = {
 	"wpn_fps_upg_o_rx30",
 	"wpn_fps_upg_o_spot"
 }
+local vanilla_ak9sight = {
+	"wpn_fps_upg_o_specter",
+	"wpn_fps_upg_o_aimpoint",
+	"wpn_fps_upg_o_aimpoint_2",
+	"wpn_fps_upg_o_docter",
+	"wpn_fps_upg_o_eotech",
+	"wpn_fps_upg_o_t1micro",
+	"wpn_fps_upg_o_cmore",
+	"wpn_fps_upg_o_acog",
+	"wpn_fps_upg_o_cs",
+	"wpn_fps_upg_o_eotech_xps",
+	"wpn_fps_upg_o_reflex",
+	"wpn_fps_upg_o_rx01",
+	"wpn_fps_upg_o_rx30",
+	"wpn_fps_upg_o_spot"
+}
 
 --- Grips ---
 ak9grips = {
@@ -206,6 +222,45 @@ ak9grips = {
 }
 
 --- Compatibility Array Insertion ---
+
+--- CAFCW aka better later then never also holy shit this actually works ---
+if attach_tables then
+	for _, md_id in pairs(attach_tables.Barrel_Extensions) do
+		if self.parts[md_id] then
+			table.insert(all_ak9ext, md_id)
+		end
+	end
+	for _, md_id in pairs(attach_tables.Suppressors) do
+		if self.parts[md_id] then
+			table.insert(all_ak9ext, md_id)
+		end
+	end
+	for _, fl_id in pairs(attach_tables.Gadgets) do
+		if self.parts[fl_id] then
+			table.insert(all_ak9fl, fl_id)
+		end
+	end
+	for _, o_id in pairs(attach_tables.ACOG) do
+		if self.parts[o_id] then
+			table.insert(all_ak9sight, o_id)
+		end
+	end
+	for _, o_id in pairs(attach_tables.Custom) do
+		if self.parts[o_id] then
+			table.insert(all_ak9sight, o_id)
+		end
+	end
+	for _, o_id in pairs(attach_tables.Specter) do
+		if self.parts[o_id] then
+			table.insert(all_ak9sight, o_id)
+		end
+	end
+	for _, o_id in pairs(attach_tables.Custom_AK) do
+		if self.parts[o_id] then
+			table.insert(all_ak9sight, o_id)
+		end
+	end
+end
 
 if self.wpn_fps_ass_heffy_762 then
 	
@@ -229,24 +284,6 @@ end
 -----------------------------------------
 ----<A><K><4><7> -CAFCW- <A><K><4><7>----
 -----------------------------------------
-if BeardLib.Utils:FindMod("gsup") then
-	local AK9SneakySuppressorPack = {
-		"wpn_fps_ass_ns_g_sup3",
-		"wpn_fps_ass_ns_g_sup4",
-		"wpn_fps_ass_ns_g_sup5"
-	}
-	for id, part_id in pairs(AK9SneakySuppressorPack) do
-		table.insert(self.wpn_fps_ass_heffy_939.uses_parts, part_id)
-		table.insert(self.wpn_fps_ass_x_heffy_939.uses_parts, part_id)
-		table.insert(all_ak9ext, part_id)
-	end
-end
-
-if BeardLib.Utils:FindMod("Tromix Barrel-Ext") then
-	table.insert(self.wpn_fps_ass_heffy_939.uses_parts, "wpn_fps_upg_ns_ass_smg_tromix")	
-	table.insert(self.wpn_fps_ass_x_heffy_939.uses_parts, "wpn_fps_upg_ns_ass_smg_tromix")	
-	table.insert(all_ak9ext, "wpn_fps_upg_ns_ass_smg_tromix")
-end
 
 if BeardLib.Utils:FindMod("M82 Muzzle Brake") then
 	table.insert(all_ak9ext, "wpn_fps_upg_ns_m82")
@@ -303,6 +340,8 @@ self:akpack_check_adds( "wpn", "wpn_fps_ass_heffy_939" )
 for i, o_id in pairs(all_ak9sight) do
 	table.insert(self.parts.wpn_fps_ass_heffy_939_ro_tiss.forbids, o_id)
 	table.insert(self.parts.wpn_fps_ass_heffy_939_ufg_tiss.forbids, o_id)
+end
+for i, o_id in pairs(vanilla_ak9sight) do
 	self.wpn_fps_ass_heffy_939.adds[o_id] = {"wpn_fps_upg_o_ak9_scopemount"}
 	self.wpn_fps_ass_x_heffy_939.adds[o_id] = {"wpn_fps_upg_o_ak9_scopemount"}
 end
@@ -316,7 +355,7 @@ end
 ------------------------------------
 
 --- Vanilla sights ---
-for id, o_id in pairs(all_ak9sight) do
+for id, o_id in pairs(vanilla_ak9sight) do
 	if self.parts[o_id].stance_mod.wpn_fps_ass_flint then
 		self.parts[o_id].stance_mod.wpn_fps_ass_heffy_939 = deep_clone(self.parts[o_id].stance_mod.wpn_fps_ass_flint)
 	else
