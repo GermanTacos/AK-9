@@ -162,6 +162,12 @@ if ( self.heffy_939 ) then
 		rotation = Rotation(0, 0, 0)
 	})
 	self:SetupAttachmentPoint("heffy_939", {
+		name = "a_o_okp7",
+		base_a_obj = "a_o",
+		position = Vector3(-0.5, -5.85, -2.2),
+		rotation = Rotation(0, 0, 0)
+	})
+	self:SetupAttachmentPoint("heffy_939", {
 		name = "a_o_pso1",
 		base_a_obj = "a_o",
 		position = Vector3(-0.7, -7, -1.2),
