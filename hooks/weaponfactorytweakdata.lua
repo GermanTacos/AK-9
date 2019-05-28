@@ -296,6 +296,11 @@ if BeardLib.Utils:FindMod("M82 Muzzle Brake") then
 	table.insert(all_ak9ext, "wpn_fps_upg_ns_m82")
 	table.insert(all_ak9ext, "wpn_fps_upg_ns_aw50")
 end
+if self.parts.wpn_fps_upg_o_thersig then
+	table.insert(all_ak9sight, "wpn_fps_upg_o_thersig")
+	table.insert(vanilla_ak9sight, "wpn_fps_upg_o_thersig")
+end
+
 
 
 --------------------------------------
