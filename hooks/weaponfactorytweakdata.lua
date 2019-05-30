@@ -255,15 +255,11 @@ if attach_tables then
 			table.insert(all_ak9sight, o_id)
 		end
 	end
-	for _, o_id in pairs(attach_tables.Custom_AK) do
-		if self.parts[o_id] then
-			table.insert(all_ak9sight, o_id)
-		end
-	end
 	if attach_tables.Custom_AK then --safety (since that thing doesn't exist in older versions)
 		for _, o_id in pairs(attach_tables.Custom_AK) do
 			if self.parts[o_id] then
 				table.insert(self.parts.wpn_fps_upg_o_ak9_l_scopemount.forbids, o_id)
+				table.insert(all_ak9sight, o_id)
 			end
 		end
 	end
