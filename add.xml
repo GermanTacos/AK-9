@@ -321,6 +321,7 @@
 	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_ufg_tiss"/>
 	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_lr_tiss"/>
 	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_st_tiss"/>
+	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_st_none"/>
 	
 	<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_heffy_939_so_pr"/>
 
