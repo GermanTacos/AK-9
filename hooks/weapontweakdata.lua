@@ -1,7 +1,16 @@
 Hooks:PostHook( WeaponTweakData, "init", "AK9ModInit", function(self)
 
 if ( self.heffy_939 ) then
-
+if self.new_m4.reload_timed_stance_mod then
+	self.heffy_939.reload_timed_stance_mod = {
+		empty = {
+			hip = {
+				{t = 0.9, translation = Vector3(-30, 12, -10), rotation = Rotation(-50, 0, -40), speed = 0.5}, -- turn gun over to check that bolt has released
+				{t = 0.0, translation = Vector3(0, 0, 0), rotation = Rotation(0, 0, 0), speed = 0.5} -- return to default position
+			}
+		}
+	}
+end
 ---- Bipod Stuff ----
 --[[self.heffy_939.animations.bipod_enter = "bipod_enter"
 	self.heffy_939.animations.bipod_exit = "bipod_exit"
