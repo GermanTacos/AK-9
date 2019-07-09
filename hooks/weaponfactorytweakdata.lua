@@ -222,6 +222,18 @@ ak9grips = {
 }
 
 --- Compatibility Array Insertion ---
+local ak9_extras_md = {
+	"wpn_fps_ass_heffy_all_fh_krebs",
+	"wpn_fps_ass_heffy_762_fh_tank",
+	"wpn_fps_ass_heffy_762_fh_fun",
+	"wpn_fps_ass_heffy_545_fh_tank",
+	"wpn_fps_ass_heffy_545_fh_fun"
+	}
+for i, md_id in pairs(ak9_extras_md) do
+	if self.parts[md_id] then
+		table.insert(all_ak9ext, md_id)
+	end
+end
 
 --- CAFCW aka better later then never also holy shit this actually works ---
 if attach_tables then
